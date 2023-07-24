@@ -1,4 +1,4 @@
-import axios from "axios";
+ import axios from "axios";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +11,7 @@ function Add() {
   const data = {
     name: name,
     email: email,
-    phone: phone,
+    phoneNumber: phone,
   };
 
   function submitForm(e) {
@@ -24,7 +24,7 @@ function Add() {
       return;
     }
 
-    axios.post("http://localhost:3001/users", data)
+    axios.post("http://localhost:3006/visitors", data)
       .then(() => {
         alert("Data submitted successfully!");
         navigate("/");

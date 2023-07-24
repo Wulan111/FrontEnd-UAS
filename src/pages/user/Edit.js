@@ -11,10 +11,10 @@ function Add() {
 
   
   useEffect(() => {
-    axios.get(`http://localhost:3001/users/${id}`).then((res) => {
+    axios.get(`http://localhost:3006/visitors/${id}`).then((res) => {
       setName(res.data.name);
       setEmail(res.data.email);
-      setPhone(res.data.phone);
+      setPhone(res.data.phoneNumber);
     });
   }, []);
 
@@ -23,12 +23,12 @@ function Add() {
   const data = {
     name: name,
     email: email,
-    phone: phone,
+    phoneNumber: phone,
   };
 
   function Update(e) {
     e.preventDefault();
-    axios.put(`http://localhost:3001/users/${id}`, data).then(navigate("/"));
+    axios.put(`http://localhost:3006/visitors/${id}`, data).then(navigate("/"));
   }
   return (
     <div className="w-screen h-full flex flex-col justify-center items-center mt-16">

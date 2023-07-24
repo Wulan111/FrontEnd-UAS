@@ -10,7 +10,7 @@ function Users() {
   const [user, setUser] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:3001/users/${id}`).then((res) => {
+    axios.get(`http://localhost:3006/visitors/${id}`).then((res) => {
       setUser(res.data);
     });
   }, []);
@@ -46,7 +46,7 @@ function Users() {
                 {user.email}
               </h2>
               <h2 className="text-teal-200 font-bold text-3xl border-black border-b-2">
-                {user.phone}
+                {user.phoneNumber}
               </h2>
             </div>
           </div>

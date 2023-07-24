@@ -1,10 +1,16 @@
 {
   "users": [
     {
-      "name": "wulan",
+      "name": "wulan aji",
       "email": "wulanajianti@gmail.com",
       "phone": "085675432349",
       "id": 1
+    },
+    {
+      "name": "Moon",
+      "email": "moon@gmail.com",
+      "phone": "087656787542",
+      "id": 2
     }
   ]
 }
