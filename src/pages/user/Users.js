@@ -20,7 +20,7 @@ function Users() {
     <>
       <div className="h-full w-full flex flex-col mt-32 justify-center items-center">
         <Link
-          to={`/`}
+          to={`/Home`}
           className="hover:bg-teal-600 bg-white hover:shadow-md  outline-none rounded-xl font-bold border mt-8 hover:text-teal-200 text-teal-600 border-zinc-400 py-4 px-4 pl-4"
         >
           Kembali

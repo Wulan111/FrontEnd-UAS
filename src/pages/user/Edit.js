@@ -28,7 +28,7 @@ function Add() {
 
   function Update(e) {
     e.preventDefault();
-    axios.put(`http://localhost:3006/visitors/${id}`, data).then(navigate("/"));
+    axios.put(`http://localhost:3006/visitors/${id}`, data).then(navigate("/Home"));
   }
   return (
     <div className="w-screen h-full flex flex-col justify-center items-center mt-16">

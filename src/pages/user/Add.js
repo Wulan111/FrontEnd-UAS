@@ -27,7 +27,7 @@ function Add() {
     axios.post("http://localhost:3006/visitors", data)
       .then(() => {
         alert("Data submitted successfully!");
-        navigate("/");
+        navigate("/Home");
       })
       .catch((error) => {
         alert("An error occurred while submitting the data.");

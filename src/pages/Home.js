@@ -18,7 +18,10 @@ function Home() {
   }
 
   useEffect(() => {
+    
+    
     getData();
+    
   }, []);
 
   function deleteUser(id) {

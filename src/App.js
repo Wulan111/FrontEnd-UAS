@@ -9,6 +9,7 @@ import Register from './pages/auth/register';
 import Login from './pages/auth/login';
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar/>
